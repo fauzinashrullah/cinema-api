@@ -1,179 +1,153 @@
 {
-	"info": {
-		"_postman_id": "1b78a8b3-2c5a-4d43-b03f-c267472e1102",
-		"name": "endpoint",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "39072269",
-		"_collection_link": "https://fauzi5.postman.co/workspace/Golang~00f8ade0-787d-4c78-b69a-810ecf74136c/collection/39072269-1b78a8b3-2c5a-4d43-b03f-c267472e1102?action=share&source=collection_link&creator=39072269"
-	},
-	"item": [
-		{
-			"name": "http://localhost:8080/login",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n  \"email\": \"admin@example.com\",\n  \"password\": \"password123\"\n}\n",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8080/login",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"login"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:8080/api/schedules",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYzJmNmY1ZDItNDE2MC00YmIwLTgzMGItNGZhOWFkNzU2Y2Y2IiwiZXhwIjoxNzU0MTUzNjU4fQ.TeL3Tur2C9iqtfOjTVfD3piDcJ-LYzpW74Aucb9arLk",
-							"type": "string"
-						}
-					]
-				},
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/schedules",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"schedules"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:8080/api/schedules",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYzJmNmY1ZDItNDE2MC00YmIwLTgzMGItNGZhOWFkNzU2Y2Y2IiwiZXhwIjoxNzU0MTUyOTMzfQ.d9TnKY234WD45a355-OERIQ2OHkc6MOdOVtH0GEoGx0",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n  \"film_id\": \"78fbc0ea-16f3-4546-8ae4-25db91c2b8ea\",\n  \"theater_id\": \"3a73e7b2-6bdd-4956-b424-a09f47e7d6ce\",\n  \"show_time\": \"2025-08-02T19:30:00Z\"\n}\n",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8080/api/schedules",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"schedules"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:8080/api/schedules/[schedule_id]",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYzJmNmY1ZDItNDE2MC00YmIwLTgzMGItNGZhOWFkNzU2Y2Y2IiwiZXhwIjoxNzU0MTUzNjU4fQ.TeL3Tur2C9iqtfOjTVfD3piDcJ-LYzpW74Aucb9arLk",
-							"type": "string"
-						}
-					]
-				},
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n  \"film_id\": \"78fbc0ea-16f3-4546-8ae4-25db91c2b8ea\",\n  \"theater_id\": \"3a73e7b2-6bdd-4956-b424-a09f47e7d6ce\",\n  \"show_time\": \"2025-08-02T19:30:00Z\"\n}\n",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8080/api/schedules/[schedule_id]",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"schedules",
-						"[schedule_id]"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:8080/api/schedules/[schedule_id]",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYzJmNmY1ZDItNDE2MC00YmIwLTgzMGItNGZhOWFkNzU2Y2Y2IiwiZXhwIjoxNzU0MTUzNjU4fQ.TeL3Tur2C9iqtfOjTVfD3piDcJ-LYzpW74Aucb9arLk",
-							"type": "string"
-						}
-					]
-				},
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/schedules/[schedule_id]",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"schedules",
-						"[schedule_id]"
-					]
-				}
-			},
-			"response": []
-		}
-	]
+  "info": {
+    "_postman_id": "1b78a8b3-2c5a-4d43-b03f-c267472e1102",
+    "name": "endpoint",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "39072269",
+    "_collection_link": "https://fauzi5.postman.co/workspace/Golang~00f8ade0-787d-4c78-b69a-810ecf74136c/collection/39072269-1b78a8b3-2c5a-4d43-b03f-c267472e1102?action=share&source=collection_link&creator=39072269"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"admin@example.com\",\n  \"password\": \"password123\"\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/login",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["login"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Schedules",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYzJmNmY1ZDItNDE2MC00YmIwLTgzMGItNGZhOWFkNzU2Y2Y2IiwiZXhwIjoxNzU0MTUzNjU4fQ.TeL3Tur2C9iqtfOjTVfD3piDcJ-LYzpW74Aucb9arLk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/schedules",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "schedules"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Schedules",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYzJmNmY1ZDItNDE2MC00YmIwLTgzMGItNGZhOWFkNzU2Y2Y2IiwiZXhwIjoxNzU0MTUyOTMzfQ.d9TnKY234WD45a355-OERIQ2OHkc6MOdOVtH0GEoGx0",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"film_id\": \"78fbc0ea-16f3-4546-8ae4-25db91c2b8ea\",\n  \"theater_id\": \"3a73e7b2-6bdd-4956-b424-a09f47e7d6ce\",\n  \"show_time\": \"2025-08-02T19:30:00Z\"\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/schedules",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "schedules"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Schedule",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYzJmNmY1ZDItNDE2MC00YmIwLTgzMGItNGZhOWFkNzU2Y2Y2IiwiZXhwIjoxNzU0MTUzNjU4fQ.TeL3Tur2C9iqtfOjTVfD3piDcJ-LYzpW74Aucb9arLk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"film_id\": \"78fbc0ea-16f3-4546-8ae4-25db91c2b8ea\",\n  \"theater_id\": \"3a73e7b2-6bdd-4956-b424-a09f47e7d6ce\",\n  \"show_time\": \"2025-08-02T19:30:00Z\"\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/schedules/[schedule_id]",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "schedules", "[schedule_id]"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Schedule",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYzJmNmY1ZDItNDE2MC00YmIwLTgzMGItNGZhOWFkNzU2Y2Y2IiwiZXhwIjoxNzU0MTUzNjU4fQ.TeL3Tur2C9iqtfOjTVfD3piDcJ-LYzpW74Aucb9arLk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/schedules/[schedule_id]",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "schedules", "[schedule_id]"]
+        }
+      },
+      "response": []
+    }
+  ]
 }
